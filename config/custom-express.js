@@ -2,7 +2,6 @@ let express = require('express')
 let consign = require('consign')
 let bodyParser = require('body-parser')
 let validator = require('express-validator')
-let moongose = require('mongoose')
 
 module.exports = function() {
     let app = express()

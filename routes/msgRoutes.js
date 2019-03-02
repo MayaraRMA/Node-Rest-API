@@ -6,6 +6,10 @@ var messages = require('../controllers/msgController');
 
 // messages Routes
 
+app.route('/')
+
+   .get(messages.list_all_messages)
+
 app.route('/mdr')
 
    .get(messages.list_all_messages)

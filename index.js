@@ -5,7 +5,7 @@ let app = require('./config/custom-express')()
 const port = normalizePort(process.env.PORT || '3000')
 
 app.listen(port, function() {
-    console.log(`Servidor rodando na porta ${port}`)
+    console.log(`'Message RESTful API server started on: ${port}`)
 });
 
 function normalizePort(val) {

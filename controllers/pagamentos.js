@@ -48,6 +48,10 @@ let adquirentes = [
 
 
 module.exports = function(app) {
+    app.get('/', (req, res) => {
+        res.status(200).json('Welcome to my Rest API')
+    })
+
     app.get('/mdr', (req, res) => {
         console.log('recebida requisão na porta 3000')
         
